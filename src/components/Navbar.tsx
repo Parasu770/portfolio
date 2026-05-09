@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -20,8 +21,8 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex gap-8 text-gray-300">
-          <Link href="/" className="hover:text-purple-400">
+<div className="hidden md:flex items-center gap-8 text-gray-300">
+            <Link href="/" className="hover:text-purple-400">
             Home
           </Link>
 
@@ -74,6 +75,7 @@ export default function Navbar() {
           <Link href="/contact" onClick={() => setOpen(false)}>
             Contact
           </Link>
+          <ThemeToggle />
         </div>
       )}
     </nav>
