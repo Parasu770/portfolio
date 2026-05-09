@@ -1,3 +1,4 @@
+import GithubStats from "@/components/GithubStats";
 import { skills } from "@/data/skills";
 import ExperienceTimeline from "@/components/ExperienceTimeline";
 export default function AboutPage() {
@@ -26,6 +27,7 @@ export default function AboutPage() {
           </span>
         ))}
         <ExperienceTimeline />
+        <GithubStats />
       </div>
     </div>
   );
