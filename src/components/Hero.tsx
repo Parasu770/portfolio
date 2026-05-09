@@ -1,5 +1,5 @@
 "use client";
-
+import { TypeAnimation } from "react-type-animation";
 import Link from "next/link";
 import { personalInfo } from "@/data/personal";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -25,13 +25,27 @@ export default function Hero() {
         {personalInfo.name}
       </motion.h1>
 
-      <motion.h2
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        className="mt-5 text-2xl md:text-4xl font-semibold text-white"
-      >
-        {personalInfo.role}
-      </motion.h2>
+      <motion.div
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  className="mt-5 text-2xl md:text-4xl font-semibold text-white"
+>
+  <TypeAnimation
+    sequence={[
+      "AI Developer",
+      2000,
+      "Full Stack Developer",
+      2000,
+      "Machine Learning Enthusiast",
+      2000,
+      "Frontend Designer",
+      2000,
+    ]}
+    wrapper="span"
+    speed={50}
+    repeat={Infinity}
+  />
+</motion.div>
 
       <motion.p
         initial={{ opacity: 0 }}
