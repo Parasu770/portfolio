@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { personalInfo } from "@/data/personal";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -7,8 +8,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="min-h-[80vh] flex flex-col justify-center items-center text-center">
-
+    <section className="min-h-[85vh] flex flex-col justify-center items-center text-center">
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -18,7 +18,7 @@ export default function Hero() {
       </motion.p>
 
       <motion.h1
-        initial={{ opacity: 0, scale: 0.8 }}
+        initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         className="text-5xl md:text-7xl font-bold gradient-text"
       >
@@ -28,7 +28,7 @@ export default function Hero() {
       <motion.h2
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="mt-4 text-2xl md:text-4xl font-semibold text-white"
+        className="mt-5 text-2xl md:text-4xl font-semibold text-white"
       >
         {personalInfo.role}
       </motion.h2>
@@ -36,7 +36,7 @@ export default function Hero() {
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="mt-6 max-w-2xl text-gray-400 text-lg"
+        className="mt-6 max-w-3xl text-gray-400 text-lg leading-8"
       >
         {personalInfo.subtitle}
       </motion.p>
@@ -44,21 +44,51 @@ export default function Hero() {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
+        className="mt-8 flex flex-wrap justify-center gap-4"
+      >
+        <Link
+          href="/projects"
+          className="px-6 py-3 rounded-lg bg-purple-600 hover:bg-purple-700 transition"
+        >
+          View Projects
+        </Link>
+
+        <Link
+          href="/resume"
+          className="px-6 py-3 rounded-lg border border-white/20 hover:bg-white/10 transition"
+        >
+          View Resume
+        </Link>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         className="mt-8 flex gap-4"
       >
-        <a href={personalInfo.github} target="_blank" className="p-3 rounded-full bg-white/10 hover:bg-purple-600">
+        <a
+          href={personalInfo.github}
+          target="_blank"
+          className="p-3 rounded-full bg-white/10 hover:bg-purple-600"
+        >
           <FaGithub size={24} />
         </a>
 
-        <a href={personalInfo.linkedin} target="_blank" className="p-3 rounded-full bg-white/10 hover:bg-purple-600">
+        <a
+          href={personalInfo.linkedin}
+          target="_blank"
+          className="p-3 rounded-full bg-white/10 hover:bg-purple-600"
+        >
           <FaLinkedin size={24} />
         </a>
 
-        <a href={`mailto:${personalInfo.email}`} className="p-3 rounded-full bg-white/10 hover:bg-purple-600">
+        <a
+          href={`mailto:${personalInfo.email}`}
+          className="p-3 rounded-full bg-white/10 hover:bg-purple-600"
+        >
           <MdEmail size={24} />
         </a>
       </motion.div>
-
     </section>
   );
 }
