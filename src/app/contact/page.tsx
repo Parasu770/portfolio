@@ -1,3 +1,4 @@
+"use client";
 export default function ContactPage() {
   return (
     <div className="max-w-3xl mx-auto mt-16">
