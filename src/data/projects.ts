@@ -2,25 +2,27 @@ export const projects = [
   {
     title: "AI Business Analyzer",
     description:
-      "Full-stack platform to upload data, detect anomalies, visualize dashboards, and interact with AI chatbot insights.",
-    image: "/projects/project1.png",
-    github: "#",
+      "Full-stack AI platform for dataset upload, anomaly detection, dashboard analytics, PDF reporting, and chatbot-based business insights.",
+    image: "/projects/business-analyzer.png",
+    github: "https://github.com/Parasu770",
     demo: "#",
   },
+
   {
-    title: "Traffic Prediction System",
+    title: "Traffic Congestion Prediction",
     description:
-      "ML-based system to predict traffic congestion using time-series and environmental data.",
-    image: "/projects/project2.png",
-    github: "#",
+      "AI-based traffic prediction system using machine learning and time-series forecasting with future congestion analysis.",
+    image: "/projects/traffic-ai.png",
+    github: "https://github.com/Parasu770",
     demo: "#",
   },
+
   {
     title: "Portfolio Website",
     description:
-      "Modern portfolio built with Next.js, Tailwind CSS, and animations.",
-    image: "/projects/project3.png",
-    github: "#",
+      "Modern responsive portfolio website built using Next.js, Tailwind CSS, Framer Motion, and Vercel deployment.",
+    image: "/projects/portfolio.png",
+    github: "https://github.com/Parasu770/portfolio",
     demo: "#",
   },
 ];

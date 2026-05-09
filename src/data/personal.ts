@@ -1,9 +1,12 @@
 export const personalInfo = {
-  name: "Parasu",
+  name: "Parasuraman",
   role: "Data Analyst",
   subtitle:
-    "I build modern web apps, dashboards, SaaS platforms, and AI-powered business tools.",
+    "I build AI-powered applications, data-driven dashboards, modern web platforms, and intelligent business solutions.",
+
   github: "https://github.com/Parasu770",
-  linkedin: "https://www.linkedin.com/in/musraf0721",
+
+  linkedin: "https://linkedin.com/in/YOUR_LINKEDIN",
+
   email: "parasu0603@gmail.com",
 };
