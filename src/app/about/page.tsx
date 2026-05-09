@@ -1,5 +1,5 @@
 import { skills } from "@/data/skills";
-
+import ExperienceTimeline from "@/components/ExperienceTimeline";
 export default function AboutPage() {
   return (
     <div className="max-w-5xl mx-auto mt-16">
@@ -25,6 +25,7 @@ export default function AboutPage() {
             {skill}
           </span>
         ))}
+        <ExperienceTimeline />
       </div>
     </div>
   );
