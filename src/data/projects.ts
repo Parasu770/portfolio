@@ -14,7 +14,7 @@ export const projects = [
   description:
     "Deep learning-based wafer defect classification system using wafer map data. The project uses CNN-based models to identify defect patterns and support semiconductor quality inspection.",
   image: "/projects/wafer-defect-ai.png",
-  github: "https://github.com/Parasu770",
+  github: "https://github.com/Parasu770/wafer-defect-ai",
   demo: "#",
   tech: ["Python", "PyTorch", "Deep Learning", "CNN", "Computer Vision"],
 },
