@@ -6,8 +6,8 @@ export const projects = [
     image: "/projects/business-analyzer.png",
     github: "https://github.com/Parasu770",
     demo: "#",
+    tech: ["Next.js", "FastAPI", "Python", "SQLite", "Tailwind CSS"],
   },
-
   {
     title: "Traffic Congestion Prediction",
     description:
@@ -15,8 +15,8 @@ export const projects = [
     image: "/projects/traffic-ai.png",
     github: "https://github.com/Parasu770",
     demo: "#",
+    tech: ["Python", "Machine Learning", "Pandas", "Scikit-learn"],
   },
-
   {
     title: "Portfolio Website",
     description:
@@ -24,5 +24,6 @@ export const projects = [
     image: "/projects/portfolio.png",
     github: "https://github.com/Parasu770/portfolio",
     demo: "#",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
   },
 ];
