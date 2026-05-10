@@ -8,6 +8,17 @@ export const projects = [
     demo: "#",
     tech: ["Next.js", "FastAPI", "Python", "SQLite", "Tailwind CSS"],
   },
+
+   {
+  title: "Wafer Defect AI Inspection",
+  description:
+    "Deep learning-based wafer defect classification system using wafer map data. The project uses CNN-based models to identify defect patterns and support semiconductor quality inspection.",
+  image: "/projects/wafer-defect-ai.png",
+  github: "https://github.com/Parasu770",
+  demo: "#",
+  tech: ["Python", "PyTorch", "Deep Learning", "CNN", "Computer Vision"],
+},
+
   {
     title: "Traffic Congestion Prediction",
     description:
@@ -26,4 +37,5 @@ export const projects = [
     demo: "#",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
   },
+
 ];
