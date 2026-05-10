@@ -1,36 +1,172 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Intelligent Business Analyzer
 
-## Getting Started
+AI-powered business analytics platform with dashboard visualization, anomaly detection, PDF reporting, chatbot insights, and dataset analysis.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# 📌 Features
+
+✅ Dataset Upload (CSV Support)  
+✅ Dashboard Analytics  
+✅ AI-Powered Insights  
+✅ Anomaly Detection  
+✅ Interactive Charts & Visualizations  
+✅ PDF Report Generation  
+✅ Business Chatbot Assistant  
+✅ Authentication System  
+✅ Analysis History Management  
+✅ Modern Responsive UI  
+
+---
+
+# 🧠 Tech Stack
+
+## Frontend
+- Next.js
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Recharts
+
+## Backend
+- FastAPI
+- Python
+- SQLAlchemy
+- SQLite
+
+## AI / Analytics
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+
+---
+
+# 🏗️ System Architecture
+
+```text
+User Upload CSV
+       ↓
+Frontend Dashboard (Next.js)
+       ↓
+FastAPI Backend
+       ↓
+AI Analysis Engine
+       ↓
+Charts + Insights + Reports
+       ↓
+Business Chatbot Assistant
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# 📂 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```text
+intelligent-business-analyzer/
+│
+├── frontend/
+│   ├── src/
+│   ├── components/
+│   ├── app/
+│   └── public/
+│
+├── backend/
+│   ├── app/
+│   ├── models/
+│   ├── api/
+│   ├── core/
+│   └── db/
+│
+└── README.md
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+# ⚙️ Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 1️⃣ Clone Repository
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+git clone https://github.com/Parasu770/intelligent-business-analyzer.git
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 2️⃣ Frontend Setup
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend runs on:
+
+```text
+http://localhost:3000
+```
+
+---
+
+## 3️⃣ Backend Setup
+
+```bash
+cd backend
+
+python -m venv .venv
+.venv\Scripts\activate
+
+pip install -r requirements.txt
+
+python run.py
+```
+
+Backend runs on:
+
+```text
+http://127.0.0.1:8000
+```
+
+---
+
+# 📊 Screenshots
+
+## Dashboard
+
+_Add dashboard screenshot here_
+
+## Analytics
+
+_Add analytics screenshot here_
+
+## Chatbot
+
+_Add chatbot screenshot here_
+
+---
+
+# 🔥 Future Improvements
+
+- OpenAI-powered chatbot
+- Real-time analytics
+- Cloud deployment
+- Multi-user collaboration
+- Advanced AI prediction models
+
+---
+
+# 👨‍💻 Author
+
+## Parasuraman
+
+AI & Full Stack Developer
+
+GitHub:
+https://github.com/Parasu770
+
+---
+
+# ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub.
