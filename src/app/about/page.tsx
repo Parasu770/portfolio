@@ -19,13 +19,13 @@ export default function AboutPage() {
 
       <div className="flex flex-wrap gap-3">
         {skills.map((skill) => (
-          <span
-            key={skill}
-            className="px-4 py-2 rounded-full bg-purple-600/20 border border-purple-500/30 text-purple-300"
-          >
-            {skill}
-          </span>
-        ))}
+  <span
+    key={skill.name}
+    className="px-4 py-2 rounded-full bg-purple-600/20 border border-purple-500/30 text-purple-300"
+  >
+    {skill.name}
+  </span>
+))}
         <ExperienceTimeline />
         <GithubStats />
       </div>

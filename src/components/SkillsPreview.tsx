@@ -10,15 +10,20 @@ export default function SkillsPreview() {
         </h2>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-3">
-        {skills.map((skill) => (
-          <span
-            key={skill}
-            className="px-5 py-2 rounded-full bg-white/5 border border-white/10 text-gray-300 hover:border-purple-500/50 hover:text-purple-300 transition"
-          >
-            {skill}
-          </span>
-        ))}
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5">
+        {skills.map((skill) => {
+          const Icon = skill.icon;
+
+          return (
+            <div
+              key={skill.name}
+              className="flex flex-col items-center justify-center gap-3 p-5 rounded-2xl bg-white/5 border border-white/10 hover:border-purple-500/50 hover:shadow-[0_0_25px_rgba(168,85,247,0.2)] transition"
+            >
+              <Icon className="text-4xl text-purple-400" />
+              <p className="text-gray-300">{skill.name}</p>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
